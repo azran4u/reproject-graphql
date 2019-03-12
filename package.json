@@ -15,6 +15,9 @@
   "devDependencies": {
     "concurrently": "^4.1.0",
     "dotenv": "^6.2.0",
+    "eslint": "^5.15.1",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.16.0",
     "nodemon": "^1.18.10",
     "ts-loader": "^5.3.3",
     "typescript": "^3.3.3333"
