@@ -1,0 +1,34 @@
+{
+  "name": "apollo-sever-demo",
+  "private": true,
+  "scripts": {
+    "compile": "tsc",
+    "build": "webpack --config webpack.$NODE_ENV.js",
+    "start": "node dist/main",
+    "start:env": "node --require dotenv/config dist/main",
+    "watch-node": "nodemon dist/main.js",
+    "watch-ts": "tsc -w",
+    "watch": "concurrently \"npm run watch-ts\" \"npm run watch-node\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/webpack-env": "^1.13.7",
+    "clean-webpack-plugin": "^1.0.1",
+    "concurrently": "^4.1.0",
+    "dotenv": "^6.2.0",
+    "nodemon": "^1.18.10",
+    "ts-loader": "^5.3.3",
+    "typescript": "^3.3.3333",
+    "webpack": "^4.29.5",
+    "webpack-cli": "^3.2.3",
+    "webpack-merge": "^4.2.1",
+    "webpack-node-externals": "^1.7.2"
+  },
+  "dependencies": {
+    "@types/graphql": "^14.0.7",
+    "apollo-server": "^2.4.6",
+    "graphql": "^14.1.1"
+  }
+}
