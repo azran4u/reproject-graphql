@@ -14,11 +14,5 @@ const server = new ApolloServer({
   // mockEntireSchema: true
 });
 
-console.log(environment.apollo.playground);
 server.listen(environment.port)
   .then(({ url }) => console.log(`Server ready at ${url}. `));
-
-// if (module.hot) {
-//   module.hot.accept();
-//   module.hot.dispose(() => server.stop());
-// }

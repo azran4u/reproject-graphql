@@ -13,7 +13,6 @@ var server = new apollo_server_1.ApolloServer({
     introspection: environment_1.environment.apollo.introspection,
     playground: true
 });
-console.log(environment_1.environment.apollo.playground);
 server.listen(environment_1.environment.port)
     .then(function (_a) {
     var url = _a.url;
