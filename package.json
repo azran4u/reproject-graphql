@@ -2,7 +2,7 @@
   "name": "apollo-sever-demo",
   "private": true,
   "scripts": {
-    "compile": "tsc",        
+    "compile": "tsc",
     "start": "node dist/main",
     "start:env": "node --require dotenv/config dist/main",
     "watch-node": "nodemon dist/main.js",
@@ -19,7 +19,7 @@
     "dotenv": "^6.2.0",
     "nodemon": "^1.18.10",
     "ts-loader": "^5.3.3",
-    "typescript": "^3.3.3333"    
+    "typescript": "^3.3.3333"
   },
   "dependencies": {
     "@types/graphql": "^14.0.7",
