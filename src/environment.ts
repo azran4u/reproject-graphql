@@ -1,4 +1,7 @@
-const defaultPort = 4000;
+import { resolve } from "path"
+import { config } from "dotenv"
+
+config({ path: resolve(__dirname, "../.env") })
 
 interface Environment {
   apollo: {
@@ -13,5 +16,5 @@ export const environment: Environment = {
     introspection: process.env.APOLLO_INTROSPECTION === 'true',
     playground: process.env.APOLLO_PLAYGROUND === 'true'
   },
-  port: process.env.PORT || defaultPort
+  port: process.env.PORT || "4000"
 };

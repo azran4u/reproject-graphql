@@ -1,14 +1,18 @@
-import { gql } from 'apollo-server';
+import { gql } from "apollo-server";
 
 export default gql`
-  type Query {    
-    testMessage: String!
-    myMessage: Boolean
-    person: [Person]
+  type Query {        
+    f(p: PointInput): Point
+    r(p: PointInput): Point
   }
-  type Person {
-    name: String
-    age: Int
-    male: Boolean
+
+  input PointInput {
+    lat: Float
+    lng: Float
   }
-`;
+
+  type Point {
+    lat: Float
+    lng: Float
+  }
+  `;
